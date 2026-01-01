@@ -1,0 +1,90 @@
+Todays Commands:
+
+
+1 yum install docker -y && systemctl start docker
+
+2 curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+
+ 3 sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+
+ 4 minikube version
+
+ 5  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+ 6 ll
+
+ 7 chmod +x kubectl
+
+ 8 ll
+
+ 9 mv kubectl /usr/local/bin/
+
+ 10 kubectl version
+
+ 11 kubectl api-resources
+
+ 12 kubectl api-resource
+
+ 13 kubectl api-resources
+
+ 14 kubectl version
+
+ 15 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+ 16 chmod +x kubectl
+
+ 17 mv kubectl /usr/local/bin/
+
+ 18 kubectl version
+
+ 19 kubectl api-resources
+
+ 20 minikube status
+
+ 21 minikube start --driver=docker
+
+ 22 minikube start --driver=docker --force
+
+ 23 minikube status
+
+ 24 kubectl api-resources
+
+ 25 kubectl get pods
+
+ 26 kubectl run mypod --image=nginx
+
+ 27 kubectl run newpod --image=httpd
+
+ 28 kubectl get pods
+
+ 29 kubectl get pod
+
+ 30 kubectl get po
+
+ 31 kubectl get p
+
+ 32 kubectl get po
+
+ 33 kubectl get newpod po
+
+ 34 kubectl get po newpod
+
+ 35 kubectl delete pod newpod
+
+ 36 kubectl get po
+
+ 37 vim flm.yml
+
+ 38 kubectl api-resources
+
+ 39 vim f
+
+ 40 vim flm.yml
+
+ 41 kubectl create -f flm.yml
+
+ 42 kubectl get po
+
+ 43 kubectl describe po flm-pod
+
+ 44 history
