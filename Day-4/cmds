@@ -27,6 +27,7 @@ export
 # setup the cluster using Kops
 kops create cluster --name vijay.k8.local --zones=us-east-1a,us-east-1b --control-plane-size c7i-flex.large \
 --control-plane-count 1 --control-plane-volume-size 20 --node-size t3.micro --node-volume-size 20 --node-count 2 --image=ami-0ecb62995f68bb549
+ 
 
-
-
+# to see the all obejects in k8s
+kubectl api-resoureces
