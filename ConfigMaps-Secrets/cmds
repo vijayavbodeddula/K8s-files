@@ -1,0 +1,50 @@
+cofigmaps can be created in 4 ways
+1) literal
+2) file
+3) env file 
+4) manifes
+
+1) literal 
+    kubectl create cm cm1 --literal-from=name=vijay --literal-from=passwd=vijay
+2) file
+   eg: file
+          hi this is vijay having contecta
+   kubectl create cm cm1 --literal-file=file
+
+3) file
+   eg: file
+          hi this is vijay having contecta
+   kubectl create cm cm1 --literal-env-file=file
+
+
+4) file
+   eg: manifest.yaml
+    
+    apiVersion: apiVersion
+    kind: ConfigMaps
+    metadata:
+        name: ConfigMaps
+    strigdata:
+        app: pod
+        env: dev
+        
+         
+   kubectl create cm1 -f manifest.yaml
+
+
+
+
+
+
+
+1️⃣ Literal
+kubectl create configmap cm1 --from-literal=name=vijay --from-literal=passwd=vijay
+
+2️⃣ From file
+kubectl create configmap cm1 --from-file=data.txt
+
+3️⃣ From env file
+kubectl create configmap cm1 --from-env-file=app.env
+
+4️⃣ From manifest YAML
+kubectl apply -f manifest.yaml
