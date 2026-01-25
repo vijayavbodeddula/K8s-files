@@ -19,14 +19,7 @@ cofigmaps can be created in 4 ways
 
 4) file
    eg: manifest.yaml
-    
-    apiVersion: apiVersion
-    kind: ConfigMaps
-    metadata:
-        name: ConfigMaps
-    strigdata:
-        app: pod
-        env: dev
+
         
          
    kubectl create cm1 -f manifest.yaml
